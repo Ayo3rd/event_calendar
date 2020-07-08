@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Event Request</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="general.css"> -->
+	<style>
+		.form-check-label
+		{
+			padding-top: calc(.5rem - 1px * 2);
+			padding-bottom: calc(.5rem - 1px * 2);
+			margin-bottom: 0;
+		}
+
+		.main-header
+		{
+			margin-top: 5%;
+		}
+		.nav
+		{
+			width:100%;	
+		}
+		.navbar
+		{
+			border: 1.5px solid gold;
+			border-radius: 3px;
+			background-color: #7E160A;
+			padding-bottom: 0.2%;
+			padding-top: 0.2%;
+		}
+		.navbar img
+		{
+			border-radius: 4px;
+		}
+				
+	</style>
+
+</head>
+<body>
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+		<div class = "container">
+	      <a class="navbar-brand" href="#">
+	      	<img src="logo.png">
+	      </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarsExample04">
+	        <ul class="navbar-nav nav justify-content-end">
+	          <li class="nav-item">	          	
+	            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	            
+	          </li>
+	          <li class="nav-item active">
+	            <a class="nav-link" href="request_form.html">Event Request</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="login.html">Login</a>
+	          </li>
+	        </ul>        
+	      </div>
+	    </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container main-header">
+		<div class="row">
+			<h1 class="col-12 mt-4 mb-4">Add an Event to Calendar</h1>
+		</div> <!-- .row -->
+	</div> <!-- .container -->
+	<div class="container">
+
+		<form action="" method="GET" accept="image/gif,image/jpeg">
+
+			<div class="form-group row">
+				<label for="-id" class="col-sm-3 col-form-label text-sm-right">
+					USC Organization: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<select name="org" id="org-id" class="form-control">
+						<option value="" selected disabled>-- Select One --</option>
+					</select>
+				</div>
+			</div> <!-- .form-group -->
+
+
+			<div class="form-group row">
+				<label for="email-id" class="col-sm-3 col-form-label text-sm-right">
+					Event Name: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<input type="text" name="email" id="email-id" class="form-control">
+				</div>
+			</div> <!-- .form-group -->
+
+			<div class="form-group row">
+				<label for="email-id" class="col-sm-3 col-form-label text-sm-right">
+					Email Address: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<input type="text" name="email" id="email-id" class="form-control">
+				</div>
+			</div> <!-- .form-group -->
+
+
+			<div class="form-group row">
+				<label for="date-id" class="col-sm-3 col-form-label text-sm-right">
+					Date: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<input type="date" name="date" id="date-id" class="form-control">
+				</div>
+			</div> <!-- .form-group -->
+
+
+			<div class="form-group row">
+				<label for="time-id" class="col-sm-3 col-form-label text-sm-right">
+					Start Time: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<input type="time" name="time" id="time-id" class="form-control">
+				</div>
+			</div> <!-- .form-group -->
+
+
+
+
+
+			<div class="form-group row">
+				<label for="flyer-id" class="col-sm-3 col-form-label text-sm-right">
+					Upload Flyer: <span class="text-danger">*</span>
+				</label>
+				<div class="col-sm-9">
+					<input type="file" name="flyer" id="flyer-id" class="form-control">
+ 					 <!-- <input type="submit" value="Submit"> -->
+				</div>
+
+
+
+
+
+
+			</div> <!-- .form-group -->
+
+
+
+
+			<div class="form-group row">
+				<div class="ml-auto col-sm-9">
+					<span class="text-danger font-italic">* Required</span>
+				</div>
+			</div> <!-- .form-group -->
+
+			<div class="form-group row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-9 mt-2">
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="reset" class="btn btn-light">Reset</button>
+				</div>
+			</div> <!-- .form-group -->
+		</form>
+	</div> <!-- .container -->
+
+
+
+
+
+
+
+
+
+
+<!-- Add Bootstrap Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
