@@ -53,7 +53,7 @@
 	//Get end from current month 
 	$year = date('Y');
 	$month = date('m');											//Change to test month. Default m
-	$lastDate = date('2020-07-31'); //date('Y-m-' . cal_days_in_month(CAL_GREGORIAN, $month, $year));  //Change to test month. Default m
+	$lastDate = date('Y-m-' . date('t', mktime(0, 0, 0, $month, 1, $year)));  //Change to test month. Default m
 	//Get number of days in month
 	$monthNum = date('d', strtotime($lastDate));
 	$monthNum = (int)$monthNum;
