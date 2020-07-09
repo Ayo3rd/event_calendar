@@ -1,5 +1,5 @@
 <?php
-	include "config/config.php";
+	require "config/config.php";
 	//Create Event Class
 	class event
 	{
@@ -42,6 +42,8 @@
 	//Get start from current month 
 	$firstDate = date('Y-m-01');								//Change to test month. Default m
 
+
+	echo $firstDate;
 	//Get the name of the month
 	$thisMonth = date("F", strtotime('m'));							//Change to test month. Default m
 
