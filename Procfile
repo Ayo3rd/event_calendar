@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 event_calendar/
+web: vendor/bin/heroku-php-apache2 /
