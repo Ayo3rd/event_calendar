@@ -1,9 +1,9 @@
 <?php
-	// Define constants - constants cannot be changed after they have been declared.
-	// define("DB_HOST", "db4free.net");
-	// define("DB_USER", "realope");
-	// define("DB_PASS", "january3rd");
-	// define("DB_NAME", "calendar_db");
+//Define constants - constants cannot be changed after they have been declared.
+	define("DB_HOST", "db4free.net");
+	define("DB_USER", "realope");
+	define("DB_PASS", "january3rd");
+	define("DB_NAME", "calendar_db");
 
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$cleardb_server = $cleardb_url["host"];
@@ -11,15 +11,16 @@
 	$cleardb_password = $cleardb_url["pass"];
 	$cleardb_db = substr($cleardb_url["path"],1);
 
-	define("DB_HOST", $cleardb_server);
-	define("DB_USER", $cleardb_username);
-	define("DB_PASS", $cleardb_password);
-	define("DB_NAME", $cleardb_db);
+	define("B_HOST", $cleardb_server);
+	define("B_USER", $cleardb_username);
+	define("B_PASS", $cleardb_password);
+	define("B_NAME", $cleardb_db);
 
 
 
 	$active_group = 'default';
 $query_builder = TRUE;
+
 
 $db['default'] = array(
     'dsn'    => '',

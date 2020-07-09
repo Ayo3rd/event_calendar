@@ -1,5 +1,5 @@
 <?php
-	require "config/config.php";
+	include "config/config.php";
 	//Create Event Class
 	class event
 	{
